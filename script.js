@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Durante uma manhã tranquila, você se senta à mesa para tomar seu café da manhã. A mesa está decorada com uma variedade de bebidas quentes. Você precisa escolher entre um café forte e aromático ou um chá relaxante. O que você prefere para começar o dia?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Café",
+                afirmacao: "Café, para me dar energia."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Chá",
+                afirmacao: "Chá, para começar o dia mis relaxada."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: " Você está planejando suas próximas férias e tem a oportunidade de escolher entre dois destinos: uma praia paradisíaca com areia branca e águas cristalinas ou uma montanha serena com trilhas e vistas deslumbrantes. Qual lugar te atrai mais?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Praia",
+                afirmacao: "Praia, porque prefiro relaxar e tomar um sol."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Montanha",
+                afirmacao: "Montanha, porque gosto de caminhar e ficar em contato com a natureza."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Em uma noite chuvosa, você decide relaxar em casa. Você tem um livro novo que está ansioso para ler, mas também tem um filme que todos estão comentando. O que você escolhe para a sua noite de entretenimento?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Filme",
+                afirmacao: "Filme, porque prefere ficar embaixo das cobertas e comer pipoca."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Livro",
+                afirmacao: "Livro, pois estou muito ansioso para saber como é a história."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você está pensando em trazer um pouco mais de vida para sua casa. Você pode optar por adotar um animal de estimação que trará companhia e alegria, ou escolher algumas plantas que embelezarão o ambiente e purificarão o ar. O que você prefere ter em casa?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Animal",
+                afirmacao: "Animal, para poder brincar e ensinar truques."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Plantas",
+                afirmacao: "Plantas, porque gosto de um ambiente mais relaxante e tranquilo."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você recebeu uma oferta incrível para uma viagem, mas precisa decidir como chegar ao seu destino. Você pode optar por dirigir e aproveitar a paisagem ao longo do caminho ou pegar um voo rápido e direto. Como você prefere viajar?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Carro",
+                afirmacao: "Carro, pois gosto de fazer viagens mais tranquilas e aprerciar a paisagem."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Avião",
+                afirmacao: "Avião, pois quero chegar logo ao meu destino."
             }
         ]
     },
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Você prefere...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
